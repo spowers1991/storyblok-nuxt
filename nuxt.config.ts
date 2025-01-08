@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 
   storyblok: {
     accessToken: process.env.STORYBLOK_TOKEN,
+    componentsDir: '~/storyblok/components',
   },
 
   runtimeConfig: {
