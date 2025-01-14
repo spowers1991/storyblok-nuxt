@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './components/**/*.{vue,js,ts}',
     './layout/**/*.vue',
+    './shared/**/*.vue',
     './pages/**/*.vue',
     './storyblok/**/*.vue',
     './plugins/**/*.{js,ts}',

@@ -1,14 +1,13 @@
 <template>
   <div v-editable="blok">
-    <div class="mx-auto my-24 px-6 overflow-hidden">
+    <div v-editable="blok" :class="{'opacity-100': isVisible, 'opacity-0': !isVisible}" class="transition-opacity duration-1000 ease-in delay-[2.75s] overflow-hidden">
       <swiper
         :slidesPerView="blok.slidesPerView || 1.25"
         :spaceBetween="blok.spaceBetween || 80"
         :loop="blok.loop || false"
         :speed="1500"
-        :autoplay="{ delay: 500, disableOnInteraction: false }"
         :modules="[EffectCoverflow, Pagination]" 
-        class="coverflow-swiper  !overflow-visible mr-auto"
+        class="coverflow-swiper !overflow-visible mr-auto"
         effect="coverflow"
         :coverflowEffect="{
           rotate: 50,
@@ -29,12 +28,20 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted } from 'vue';
+  import { ref, onMounted } from 'vue';
   import { Swiper, SwiperSlide } from 'swiper/vue'; 
-  import { EffectCoverflow, Pagination, Autoplay  } from 'swiper'; 
+  import { EffectCoverflow, Pagination  } from 'swiper'; 
   import 'swiper/css';  
   import 'swiper/css/effect-coverflow';  
   import 'swiper/css/autoplay';
+
+  const isVisible = ref(false);
+
+  onMounted(() => {
+    console.log('Slides:', props.blok.slides);
+
+    isVisible.value = true
+  });
 
   const props = defineProps({
     blok: {
@@ -42,9 +49,6 @@
       required: true,
     },
   });
-
-  onMounted(() => {
-    console.log('Slides:', props.blok.slides);
-  });
+  
 </script>
 
