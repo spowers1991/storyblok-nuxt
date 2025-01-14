@@ -18,12 +18,12 @@
 </script>
 
 <template>
-  <header class="bg-gray-800 text-white">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+  <header class="bg-black text-[#f4f4f4]">
+    <nav class="container mx-auto flex justify-between items-center py-12 px-6 -mb-12">
 
       <div class="text-xl font-bold">
         <NuxtLink to="/" class="text-white">
-          TS Nuxt Blog Template
+          Steven Powers
         </NuxtLink>
       </div>
 

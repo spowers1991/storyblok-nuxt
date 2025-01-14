@@ -1,6 +1,7 @@
 <script setup>
   import { toRaw } from 'vue';
   import { useRoute } from 'vue-router';
+  import { setMetaTags } from '~/seo/actions/setMetaTags';
 
   const { slug } = useRoute().params;
 
@@ -9,6 +10,8 @@
     slug && slug.length > 0 ? slug.join('/') : 'home',
     { version: 'draft' }
   );
+  
+  setMetaTags(toRaw(story.value));
 
 </script>
 

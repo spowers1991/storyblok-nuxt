@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@storyblok/nuxt',
+    '@nuxtjs/google-fonts',
   ],
 
   storyblok: {
@@ -27,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   typescript: {
-    shim: false, // Disable shim if using strict TypeScript typing
+    shim: false, 
   },
 
   compatibilityDate: '2024-12-14',
@@ -35,4 +36,12 @@ export default defineNuxtConfig({
   plugins: [
     '~/storyblok/api/fetchStories.ts', 
   ],
+
+  googleFonts: {
+    families: {
+      Inter: [400, 700],
+    },
+    display: 'swap',
+  },
+
 });

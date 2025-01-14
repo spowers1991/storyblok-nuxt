@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@pinia/nuxt": "^0.9.0",
     "@storyblok/js": "^3.1.9",
     "@storyblok/nuxt": "^6.2.0",
+    "@vueuse/head": "^2.0.0",
+    "gsap": "^3.12.5",
     "nuxt": "^3.14.1592",
     "pinia": "^2.3.0",
+    "swiper": "8.3.1",
     "vue": "latest",
     "vue-router": "latest"
   },
