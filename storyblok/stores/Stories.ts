@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import type { Story } from '~/storyblok/types/Story'; 
+import type { Story } from '@/storyblok/types/Story'; 
 
 export const useStoriesStore = defineStore('stories', {
   state: () => ({

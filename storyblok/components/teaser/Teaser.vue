@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
   import TeaserTags from './TeaserTags.vue';
-  import AnimateHeading from '@/shared/animations/AnimateHeading.vue';
+  import AnimateHeading from '@/plugins/animations/AnimateHeading.vue';
 
   defineProps({
     blok: {

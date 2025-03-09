@@ -1,5 +1,5 @@
 import { useHead } from '@vueuse/head';
-import type { MetaObject } from "~/seo/types/MetaObject";
+import type { MetaObject } from "@/seo/types/MetaObject";
 
 export function setMetaTags(metaObject: MetaObject) {
   
