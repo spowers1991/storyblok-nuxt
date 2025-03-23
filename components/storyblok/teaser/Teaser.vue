@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok"  :class="[blok?.red_bg ? 'bg-red-100' : 'text-[#f4f4f4]']">
-    <div :class="['flex flex-col gap-10 container mx-auto my-20 px-6']">
+    <div :class="['flex flex-col gap-10 container mx-auto my-12 sm:my-20 px-6']">
       <TeaserTags />
       <h2 class="text-3xl sm:text-5xl max-w-3xl font-inter">
         <AnimateHeading :text="blok.headline"/>

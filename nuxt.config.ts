@@ -5,11 +5,12 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@storyblok/nuxt',
     '@nuxtjs/google-fonts',
+    '@nuxt/image',
   ],
 
   storyblok: {
     accessToken: process.env.STORYBLOK_TOKEN,
-    componentsDir: '~/storyblok/components',
+    componentsDir: '~/components/storyblok',
   },
 
   runtimeConfig: {
@@ -34,7 +35,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-12-14',
 
   plugins: [
-    '~/storyblok/api/fetchStories.ts', 
+    '~/plugins/storyblok/registerComponents.ts',
+    '~/plugins/storyblok/api/fetchStories.ts', 
   ],
 
   googleFonts: {

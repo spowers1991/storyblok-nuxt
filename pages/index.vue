@@ -1,6 +1,6 @@
 <script setup>
   import { toRaw } from 'vue';
-  import { setMetaTags } from '~/seo/actions/setMetaTags';
+  import { setMetaTags } from '~/plugins/seo/actions/setMetaTags';
 
   const story = await useAsyncStoryblok('home', { version: 'draft' });
 

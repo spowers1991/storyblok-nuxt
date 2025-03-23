@@ -1,7 +1,7 @@
 <script setup>
   import { toRaw } from 'vue';
   import { useRoute } from 'vue-router';
-  import { setMetaTags } from '~/seo/actions/setMetaTags';
+  import { setMetaTags } from '~/plugins/seo/actions/setMetaTags';
 
   const { slug } = useRoute().params;
 
