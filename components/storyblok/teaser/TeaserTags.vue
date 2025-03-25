@@ -8,7 +8,7 @@
 <script setup lang="ts">
 
     import { ref, onMounted } from 'vue';
-    import RoundedTag from '@/components/tags/RoundedTag.vue';
+    import RoundedTag from '@/components/icons/rounded_tag/RoundedTag.vue';
 
     const isVisible = ref(false);
 

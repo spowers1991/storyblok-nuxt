@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@storyblok/nuxt',
     '@nuxtjs/google-fonts',
     '@nuxt/image',
+    'nuxt-svgo',
   ],
 
   storyblok: {
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['@/assets/css/tailwind.css'],
+  css: ['@/assets/css/tailwind/tailwind.css'],
 
   postcss: {
     plugins: {
